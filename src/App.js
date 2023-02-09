@@ -6,6 +6,7 @@ import Register from './Components/Register';
 import ForgetPassword from './Components/ForgetPassword';
 import './sb-admin-2.min.css';
 import Home from './Home';
+import ResetPassword from './Components/ResetPassword';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
   <Route path='/' element={<Logins />}/>
   <Route path='/register' element={<Register />}/>
   <Route path='/forgetpassword' element={<ForgetPassword />}/>
+  <Route path="/reset/:userId" element={<ResetPassword/>}></Route>
   <Route path='/home' element={<Home />}/> 
  </Routes>
  </BrowserRouter>
