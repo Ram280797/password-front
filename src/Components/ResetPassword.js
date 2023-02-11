@@ -12,7 +12,7 @@ function ResetPassword() {
       const formik = useFormik({
           initialValues: {
             password: "",
-            // password1: "",
+           
           },
       
           validate: (values) => {
