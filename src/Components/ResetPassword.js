@@ -60,7 +60,7 @@ function ResetPassword() {
                       onChange={formik.handleChange}
                       onBlur={formik.handleBlur}
                       value={formik.values.password}
-                      type={"text"}
+                      type={"password"}
                       className={`form-control ${
                         formik.touched.password && formik.errors.password ? "error-box" : ""
                       }
@@ -84,7 +84,8 @@ function ResetPassword() {
                       onChange={formik.handleChange}
                       onBlur={formik.handleBlur}
                       value={formik.values.password1}
-                      type={"text"}
+                      type={"password"}
+
                       className="form-control" 
                     />
                   </div>
