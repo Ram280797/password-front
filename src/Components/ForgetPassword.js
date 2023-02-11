@@ -48,7 +48,7 @@ function ForgetPassword() {
               <div className="row">
                 <div className="col-lg-6 d-none d-lg-block bg-password-image">
                   <img
-                    src="https://st.depositphotos.com/1900347/4146/i/450/depositphotos_41466555-stock-photo-image-of-slice-of-pizza.jpg"
+                    src="https://img.freepik.com/premium-vector/forgot-password-concept-isolated-white_263070-194.jpg"
                     width={"460px"}
                     height={"435px"}
                     alt="Forgot password..."

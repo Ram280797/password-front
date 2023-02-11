@@ -17,7 +17,7 @@ function Logins() {
           const user =await axios.post(`${config.api}/login`, values);
           if(user.data.message === 'Success'){
           alert("Successfully Login");
-          navigate("/welcome");
+          navigate("/home");
         }else{
           alert("incorrect username/password");
         }
@@ -36,7 +36,7 @@ function Logins() {
                 <div className="row">
                   <div className="col-lg-6 d-none d-lg-block bg-login-image">
                     <img
-                      src="https://cdn.britannica.com/08/177308-050-94D9D6BE/Food-Pizza-Basil-Tomato.jpg"
+                      src="https://thumbs.dreamstime.com/b/conceptual-hand-writing-text-caption-inspiration-showing-welcome-back-business-concept-emotion-greeting-written-sticky-not-110899480.jpg"
                       width={"450px"}
                       height={"600px"}
                     />

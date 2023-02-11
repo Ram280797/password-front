@@ -15,7 +15,7 @@ function Register() {
           email: "",
           password: "",
           phone: "",
-          gender: "male",
+        
         },
     
         validate: (values) => {
@@ -130,7 +130,7 @@ function Register() {
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.password}
-                    type={"text"}
+                    type={"password"}
                     className={`form-control ${
                       formik.touched.password && formik.errors.password ? "error-box" : ""
                     }
@@ -169,7 +169,7 @@ function Register() {
                   ) : null}
                 </div>
               </div>
-              <div className="col-lg-4">
+              {/* <div className="col-lg-4">
                 <div className="form-group">
                   <label>Gender</label>
                   <select
@@ -182,10 +182,12 @@ function Register() {
                     <option>Female</option>
                   </select>
                 </div>
-              </div>          
+              </div>           */}
               <div className="col-lg-4">
                 <div className="form-group">
-                  <input type={"submit"} className="btn btn-primary" />
+                  <input type={"submit"}   onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.onSubmit} className="btn btn-primary" />
                 </div>
               </div>
             </div>
